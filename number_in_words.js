@@ -26,9 +26,9 @@ function in_words(angka){
         let puluhan = (Math.floor((angka - ratusan) / 10)) * 10;
         let satuan = (angka - ratusan) % 10;
         return bilangan[(ratusan/100)] + " ratus " + bilangan[puluhan] + " " + bilangan[satuan ];
-        
+      }
     };
 }
 
 // Driver code
-console.log(in_words(9000));
+console.log(in_words(999));
